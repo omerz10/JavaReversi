@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReversiController">
+   <top>
+      <HBox fx:id="topMenu" prefHeight="55.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#handleSettingsButton" text="Settings">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="quitButton" mnemonicParsing="false" onAction="#handleQuitButton" text="Quit">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <Pane fx:id="leftBorder" prefWidth="15.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane fx:id="bottomBorder" prefHeight="15.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane fx:id="rightBorder" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="20.0" prefWidth="165.0">
+               <children>
+                  <Label fx:id="currentPlayer" text="Current player:" />
+                  <Label fx:id="playerScore1" prefHeight="17.0" prefWidth="227.0" text="Player 1 score:" />
+                  <Label fx:id="playerScore2" text="Player 2 score:" />
+               </children>
+            </VBox>
+         </children></Pane>
+   </right>
+   <center>
+      <Pane fx:id="boardPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

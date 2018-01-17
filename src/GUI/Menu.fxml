@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuController">
+   <children>
+      <ImageView fx:id="wallpaperImage" pickOnBounds="true">
+         <image>
+            <Image url="@images/start_screen.png" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="borderPane" prefHeight="480.0" prefWidth="640.0">
+         <center>
+            <VBox fx:id="vBoxMenu" alignment="CENTER" fillWidth="false" spacing="80.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.85" scaleX="2.75" scaleY="2.5" text="Start" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="settingsButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.85" scaleX="2.75" scaleY="2.5" text="Settings" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="quitButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.85" scaleX="2.75" scaleY="2.5" text="Quit" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+         </center>
+         <top>
+            <Label opacity="0.6" text="Reversi" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="72.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</Pane>
