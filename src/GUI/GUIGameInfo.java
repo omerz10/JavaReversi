@@ -34,11 +34,11 @@ public class GUIGameInfo {
         this.P2 = new HumanPlayer('O', this.guiBoard.getBoard(), this.logic);
         this.playerColorMap = new HashMap<>();
     }
-    /*
+    
     public GUIGameFlow getGame() {
         return this.game;
     }
-    */
+    
 
     public void setGame(Color player1Color, Color player2Color) {
         this.game = new GUIGameFlow();
@@ -76,11 +76,6 @@ public class GUIGameInfo {
 
     public void setBoard(GUIBoard board) {
         this.guiBoard = board;
-    }
-
-    public int getS() {
-
-        return 7;
     }
 
     public Logic getLogic() {
